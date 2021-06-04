@@ -60,7 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
+  if (x === y) {
     return true;
   }
   else {
@@ -72,7 +72,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
   }
   else {
@@ -115,7 +115,7 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
  var par = num % 2;
- if(par == 0){
+ if(par === 0){
    return true
  }
  else{
@@ -128,7 +128,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var par = num % 2;
- if(par != 0){
+ if(par !== 0){
    return true
  }
  else{
@@ -146,7 +146,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow(num, 3);
+  return num ** 3;
 }
 
 function elevar(num, exponent) {
@@ -200,7 +200,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + " " + apellido;
+  // return nombre + " " + apellido;
+   return `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
@@ -248,7 +249,7 @@ function esVocal(letra){
     return "Dato incorrecto"
   }
   else{
-    if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u");{
+    if(letra === "a" ||  "e" ||  "i" ||  "o" || "u");{
       return "Es vocal"
     }
     return "No es vocal"
