@@ -27,10 +27,10 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status == 1){
+  if(status === 1){
     return "Online"
   }
-  else if(status == 2){
+  else if(status === 2){
     return "Away"
   }
   else{
@@ -100,7 +100,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero == 10 || numero == 5){
+  if(numero === 10 || numero === 5){
     return true
   }
   return false
@@ -124,13 +124,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if(Number.isInteger(numero)){
-    return true
-  }
-  else
-  {
-    return false;
-  }
+  return Number.isInteger(numero);
 }
 
 function fizzBuzz(numero) {
@@ -138,13 +132,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero % 3 == 0 && numero % 5 == 0){
+  if(numero % 3 === 0 && numero % 5 === 0){
     return "fizzbuzz";
   }
-  else if(numero % 3 == 0){
+  else if(numero % 3 === 0){
     return "fizz"
   }
-  else if(numero % 5 == 0){
+  else if(numero % 5 === 0){
     return "buzz"
   }
   else{
