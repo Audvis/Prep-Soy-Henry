@@ -4,6 +4,7 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
   return array[0];
+  // return array.shift();
 }
 
 
@@ -12,6 +13,7 @@ function devolverUltimoElemento(array) {
   // Tu código:
   let indice = array.length - 1;
   return array[indice];
+  // return array.pop()
 }
 
 
@@ -57,6 +59,12 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   return palabras.join(" ");
+  // let frase = [] ;
+//for(let i = 0; i < palabras.length; i++){
+  //if(i === palabras.length) frase += palabras[index];
+  //frase += palabras[index] + " ";
+  //return frase;
+//}
 }
 
 function arrayContiene(array, elemento) {
@@ -69,6 +77,7 @@ function arrayContiene(array, elemento) {
     }
   }
   return false;
+  // return array.indexOF(elemento);
 }
 
 
@@ -125,7 +134,7 @@ function multiplicarArgumentos() {
     mult = mult * arguments[i];
     return mult;
   }
-}
+} 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
@@ -214,7 +223,6 @@ function mayorACien(array) {
   return arr2;       
 }
 
-// !CHECAR
 function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
